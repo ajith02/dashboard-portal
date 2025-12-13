@@ -215,7 +215,6 @@ export default function Dashboard() {
           dataKeyY2="new"
           color={colors.success}
           color2={colors.purpleLight}
-          height={250}
           direction={isMobile ? "column" : "row"}
           gap={isMobile ? 2 : 0}
           flexRatio={isTablet ? "1 1 100%" : "1 1 0%"}
