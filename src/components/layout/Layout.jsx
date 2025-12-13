@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import Topbar from "./Topbar";
+import SideBar from "./SideBar";
+import TopBar from "./TopBar";
 
 export default function Layout() {
   const [open, setOpen] = useState(false);
@@ -11,10 +11,9 @@ export default function Layout() {
 
   return (
     <Box sx={{ display: "flex", height: "100vh" }}>
-      <Sidebar open={open} setOpen={setOpen} />
-
+      <SideBar open={open} setOpen={setOpen} />
       <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <Topbar toggleSidebar={toggleSidebar} />
+        <TopBar toggleSidebar={toggleSidebar} />
         <Box
           sx={{
             flex: 1,

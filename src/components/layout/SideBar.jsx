@@ -22,7 +22,7 @@ import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { logout } from "../../store/features/authSlice";
 
-export default function Sidebar({ open, setOpen }) {
+export default function SideBar({ open, setOpen }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();

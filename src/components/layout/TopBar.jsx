@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../store/features/authSlice";
 
-export default function Topbar({ toggleSidebar }) {
+export default function TopBar({ toggleSidebar }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [profileAnchor, setProfileAnchor] = useState(null);
